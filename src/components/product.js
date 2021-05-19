@@ -8,14 +8,14 @@ const productData = [
     {
         id: 1,
         title: 'Invoicing App',
-        description: 'Allows you to connect dots between your Project Management and Invoicing.',
+        description: 'A product that allows you to manage your clients, projects, client invoices altogether.',
         screenshot: InvoicingApp,
         stacks: ['React.js', 'Sails.js']
     },
     {
         id: 2,
         title: 'Chat Plugin',
-        description: 'Allows you to connect dots between your Project Management and Invoicing.',
+        description: 'Live chat WordPress plugin, where your support team can communicate with your customer.',
         screenshot: ChatApp,
         stacks: ['Wordpress', 'PHP']
     }
@@ -37,7 +37,7 @@ const ProductSection = () => (
             
         </Container>
         <ProductLists>
-            {productData && productData.map(({ id, title, description, screenshot }) => {
+            {productData && productData.map(({ id, title, description, screenshot, stacks }) => {
                 return (
                     <div className="product-item" key={id}>
                         <div className="product-media">
@@ -46,6 +46,9 @@ const ProductSection = () => (
                         <div className="product-details">
                             <Title className="product-title" as="h4" option={{ size: '6rem' }}>{title}</Title>
                             <p className="product-desc">{description}</p>
+                            {
+                                stacks && stacks.map((stack, index) => <strong key={index}>{stack}</strong>)
+                            }
                         </div>
                     </div>
                 )

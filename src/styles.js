@@ -362,6 +362,7 @@ export const SiteFooter = styled.footer`
     text-align: center;
 
     &::after {
+      display: none;
       background-size: 50rem;
       top: 5rem;
       opacity: 0.2;
@@ -519,11 +520,21 @@ export const ProductLists = styled.div`
     &-media {
       width: ${WIDTH_100};
     }
-
+    
     &-details {
       text-align: center;
       box-sizing: border-box;
       padding: 3rem;
+      strong {
+        font-size: 1.4rem;
+        font-weight: 400;
+        background-color: #3744ea;
+        color: ${WHITE};
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        margin-right: 0.4rem;
+        border-radius: 0.3rem;
+      }
     }
 
     &-media {
