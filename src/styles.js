@@ -103,10 +103,7 @@ export const Column = styled.div`
 
 // PAGE CONENT - FOR LEAGLE
 export const ContentPage = styled.div`
-  max-width: ${SINGLE_PAGE_COTENT_WIDTH};
-  margin: 0 auto;
-  width: ${WIDTH_100};
-  padding: 20rem 15px 10rem;
+  padding: 0 0 10rem;
 
   p {
     color: rgba(0, 0, 0, .6);
@@ -115,9 +112,23 @@ export const ContentPage = styled.div`
   }
 
   .content {
-
     &-page--heading {
       margin-bottom: 4rem;
+      background-color: #eee;
+      padding: 20rem 15px 10rem;
+      text-align: center;
+      @media only screen and (max-width: ${XS}) {
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+        font-size: 3rem;
+      }
+    }
+
+    &-wrap {
+      padding: 0 15px;
+      margin: 0 auto;
+      max-width: ${SINGLE_PAGE_COTENT_WIDTH};
+      width: ${WIDTH_100};
     }
 
     &-title {
@@ -160,12 +171,24 @@ export const SiteHeader = styled.header`
   position: fixed;
   top: 0;
   width: ${WIDTH_100};
-  padding: 2rem 0;
+  padding: 4rem 0;
   z-index: 9999;
 
   .header {
     align-items: center;
   }
+
+  &.scrolled {
+    background-color: ${WHITE}
+    padding: 2rem 0;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 1rem;
+  }
+
+  @media only screen and (max-width: ${XS}) {
+    padding: 1.5rem 0;
+  }
+
+
 `;
 
 // HEADER LET'S TALK BUTTON

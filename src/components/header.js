@@ -3,15 +3,16 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { SiteHeader, Container, LetsTalkButton } from '../styles';
 import logo from '../images/logo.svg'
+import logoGradient from '../images/logo-g.svg'
 
-const Header = ({ siteTitle, email }) => (
+const Header = ({ gradient, siteTitle, email }) => (
   <SiteHeader>
     <Container className="header" flex>
       <Link to="/">
         <img
-          src={logo}
+          src={ gradient ? logoGradient : logo }
           alt={siteTitle}
-          width={80}
+          width={100}
           style={{
             display: `block`,
             margin: 0,

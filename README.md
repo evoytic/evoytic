@@ -30,12 +30,15 @@ Build using [gatsby](https://www.gatsbyjs.com/)
     git push origin gh-pages
 
 ```
-- Create ```CNAME``` and write ```your domain``` inside ```public/static``` folder
+- Update your ```domain-name``` in ```package.json```
 ```
-    # example
-    evoytic.com
+    "deploy": "gatsby build --prefix-paths && echo 'evoytic.com' > ./public/CNAME && gh-pages -d public -b gh-pages",
+```
+to
+```
+    "deploy": "gatsby build --prefix-paths && echo 'your-domain-name' > ./public/CNAME && gh-pages -d public -b gh-pages",
 ```
 - Deploy ```npm run deploy```
 
-
-Write us an email - hello[at]evoytic.com
+#
+Write us an email for any help - contact[at]evoytic.com
