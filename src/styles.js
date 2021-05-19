@@ -114,9 +114,11 @@ export const ContentPage = styled.div`
   .content {
     &-page--heading {
       margin-bottom: 4rem;
-      background-color: #eee;
+      ${GRADIENT('120deg', 'white', '#dfe9f3', 0, 100)};
       padding: 20rem 15px 10rem;
       text-align: center;
+      color: #ff4e50;
+
       @media only screen and (max-width: ${XS}) {
         padding-top: 15rem;
         padding-bottom: 5rem;
