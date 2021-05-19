@@ -189,11 +189,14 @@ export const Banner = styled.div`
   height: ${BANNER_HEIGHT};
   margin: 0 auto;
   position: relative;
+  ${GRADIENT('120deg', '#3744ea', '#3392e4', 0, 100)};
   
   .banner-media {
     height: ${HEIGHT_100};
     justify-content: center;
-    flex-direction: column
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
   }
 `;
 
@@ -203,7 +206,7 @@ export const BannerMedia = styled.video`
   height: ${HEIGHT_100};
   position: absolute;
   object-fit: cover;
-  z-index: -1;
+  z-index: 9;
 `;
 
 // BANNER DESCRIPTION

@@ -11,7 +11,7 @@ Build using [gatsby](https://www.gatsbyjs.com/)
     * install [node](https://nodejs.org/en/)
 
 - Develop ```npm run develop``` or ```gatsby develop```
-    * * install [Gatsby CLI](https://www.gatsbyjs.com/docs/how-to/local-development/), if you want to develop using gatsby
+    * install [Gatsby CLI](https://www.gatsbyjs.com/docs/how-to/local-development/), if you want to develop using ```gatsby```
 - Browse ```http://localhost:8000```
 
 #### Deploy on ```gh-pages```
