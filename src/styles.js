@@ -106,7 +106,7 @@ export const ContentPage = styled.div`
   max-width: ${SINGLE_PAGE_COTENT_WIDTH};
   margin: 0 auto;
   width: ${WIDTH_100};
-  padding: 20rem 0 10rem;
+  padding: 20rem 15px 10rem;
 
   p {
     color: rgba(0, 0, 0, .6);
@@ -116,11 +116,16 @@ export const ContentPage = styled.div`
 
   .content {
 
+    &-page--heading {
+      margin-bottom: 4rem;
+    }
+
     &-title {
-      border-bottom: .2rem solid;
-      display: inline-flex;
       line-height: 1.4;
       margin-block-start: 3rem;
+      @media only screen and (max-width: ${XS}) {
+        font-size: 2rem;
+      }
     }
 
     &-unlist {
