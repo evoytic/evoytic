@@ -1,0 +1,8 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/chat-app.svg": "static/chat-app-56172e97d652655bd1467c73dcb8b1a3.svg",
+  "static/evoytic-intro.mp4": "static/evoytic-intro-0e1eb0a32c24feaf455c8e102a5f87b7.mp4",
+  "static/invoicing-app.svg": "static/invoicing-app-04733948fdbcd9159b720a3ee2feb955.svg",
+  "static/superman.svg": "static/superman-46e9a5e273466869c56152b90b6a4b7e.svg"
+}
