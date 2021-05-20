@@ -33,7 +33,7 @@ const Header = ({ gradient, siteTitle, email }) => {
           <img
             src={ gradient ? logoGradient : logoWhite }
             alt={siteTitle}
-            width={100}
+            width={80}
             style={{
               display: `block`,
               margin: 0,

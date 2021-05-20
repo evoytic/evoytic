@@ -182,9 +182,7 @@ export const SiteHeader = styled.header`
   }
 
   &.scrolled {
-    background-color: ${WHITE};
     padding: 1.5rem 0;
-    box-shadow: rgb(0 0 0 / 20%) 0 0 1rem;
   }
 
   @media only screen and (max-width: ${XS}) {
@@ -200,13 +198,13 @@ export const LetsTalkButton = styled.a`
   border-radius: 0.4rem;
   color: ${WHITE};
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: ${BOLD};
-  height: 5rem;
+  height: 4rem;
   letter-spacing: 0.1rem;
-  line-height: 5rem;
+  line-height: 4rem;
   margin-left: auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
   text-decoration: none;
 `;
 
