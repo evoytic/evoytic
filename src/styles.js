@@ -175,14 +175,15 @@ export const SiteHeader = styled.header`
   width: ${WIDTH_100};
   padding: 4rem 0;
   z-index: 9999;
+  transition: all 300ms ease;
 
   .header {
     align-items: center;
   }
 
   &.scrolled {
-    background-color: ${WHITE}
-    padding: 2rem 0;
+    background-color: ${WHITE};
+    padding: 1.5rem 0;
     box-shadow: rgb(0 0 0 / 20%) 0 0 1rem;
   }
 

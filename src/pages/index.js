@@ -11,7 +11,10 @@ import ServicesSection from "../components/services";
 
 const IndexPage = () => (
   <Layout gradient={false}>
-    <Seo title="Startup, SaSS Based &amp; Consulting" />
+    <Seo
+      title="Startup, Solutions for every individual, team &amp; organization."
+      keyword="web development, web app, mobile app, web design, e-commerce, digital marketing"
+    />
     <SiteBanner/>
     <AboutUsSection />
     <ServicesSection />
