@@ -3,18 +3,17 @@
 
 Build using [gatsby](https://www.gatsbyjs.com/)
 
-#### Run Locally
+### Run Locally
 
+**Required** - [node](https://nodejs.org/en/)
 
 - Clone
 - Install packages ```npm i```
-    * install [node](https://nodejs.org/en/)
-
 - Develop ```npm run develop``` or ```gatsby develop```
     * install [Gatsby CLI](https://www.gatsbyjs.com/docs/how-to/local-development/), if you want to develop using ```gatsby```
 - Browse ```http://localhost:8000```
 
-#### Deploy on ```gh-pages```
+### Deploy on ```gh-pages```
 - Create new empty branch ```gh-pages``` (important)
 ```
     # create branch
@@ -30,14 +29,15 @@ Build using [gatsby](https://www.gatsbyjs.com/)
     git push origin gh-pages
 
 ```
-- Update your ```domain-name``` in ```package.json```
-```
-    "deploy": "gatsby build --prefix-paths && echo 'evoytic.com' > ./public/CNAME && gh-pages -d public -b gh-pages",
-```
-to
-```
-    "deploy": "gatsby build --prefix-paths && echo 'your-domain-name' > ./public/CNAME && gh-pages -d public -b gh-pages",
-```
+- Make update on ```package.json```
+    * Remove ```echo 'your-domain-name' > ./public/CNAME &&```, If not using **custom domain**
+
+    * Change ```DOMAIN-NAME```, If using custom domain
+
+    ```
+    "deploy": "gatsby build --prefix-paths && echo 'DOMAIN-NAME' > ./public/CNAME && gh-pages -d public -b gh-pages",
+    ```
+
 - Deploy ```npm run deploy```
 
 #
