@@ -34,16 +34,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'G-0417F6ER5J',
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        pageTransitionDelay: 0,
-        defer: false,
-        cookieDomain: 'evoytic.com',
+        trackingIds: [
+          'G-0417F6ER5J'
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        }
       },
     },
     'gatsby-plugin-offline',
