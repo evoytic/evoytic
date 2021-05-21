@@ -9,6 +9,14 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -373,7 +381,7 @@ ul, li, span, p {
 p a:link {
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  color: #ff0056;
+  color: #ff4e50;
 }
 
 p a:link:hover {

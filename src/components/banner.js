@@ -19,7 +19,7 @@ const SiteBanner = () => (
         >
             {`We devise solutions for every individual, team & org.`}
         </Title>
-        <BannerContent><strong>{`Evoytic, Inc. - `}</strong>{`the best source for product development. We're dedicated to designing the best of product development perfection with an emphasis on originality, creativity, and innovation.`}</BannerContent>
+        <BannerContent><strong>{`Evoytic, Inc. - `}</strong>{`We're dedicated to designing the best of product development perfection with an emphasis on originality, creativity, and discovery.`}</BannerContent>
     </Container>
 
   </Banner>

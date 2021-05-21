@@ -14,7 +14,7 @@ const AboutUsSection = () => (
                     color: 'white',
                 }}
             >
-                {`To infinity & beyond`}
+                {`Extent & hyper`}
             </Title>
             <p className="section-intro">An expert team that helps companies get through customized product/web development, digital marketing, and e-commerce. We look at the best approach and help brands to get to a more profitable position than they are now.</p>
         </Container>

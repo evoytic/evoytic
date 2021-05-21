@@ -55,7 +55,6 @@ const Footer = ({ email, address, siteTitle  }) => (
           © {new Date().getFullYear()} {siteTitle}
         </span>
         <FooterLink to="/privacy-policy">{`Privacy`}</FooterLink>
-        <FooterLink to="/terms-of-services">{`Terms`}</FooterLink>
       </FooterLinks>
     </Container>
   </SiteFooter>

@@ -103,10 +103,7 @@ export const Column = styled.div`
 
 // PAGE CONENT - FOR LEAGLE
 export const ContentPage = styled.div`
-  max-width: ${SINGLE_PAGE_COTENT_WIDTH};
-  margin: 0 auto;
-  width: ${WIDTH_100};
-  padding: 20rem 0 10rem;
+  padding: 0 0 10rem;
 
   p {
     color: rgba(0, 0, 0, .6);
@@ -115,12 +112,33 @@ export const ContentPage = styled.div`
   }
 
   .content {
+    &-page--heading {
+      margin-bottom: 4rem;
+      ${GRADIENT('120deg', 'white', '#dfe9f3', 0, 100)};
+      padding: 20rem 15px 10rem;
+      text-align: center;
+      color: #ff4e50;
+
+      @media only screen and (max-width: ${XS}) {
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+        font-size: 3rem;
+      }
+    }
+
+    &-wrap {
+      padding: 0 15px;
+      margin: 0 auto;
+      max-width: ${SINGLE_PAGE_COTENT_WIDTH};
+      width: ${WIDTH_100};
+    }
 
     &-title {
-      border-bottom: .2rem solid;
-      display: inline-flex;
       line-height: 1.4;
       margin-block-start: 3rem;
+      @media only screen and (max-width: ${XS}) {
+        font-size: 2rem;
+      }
     }
 
     &-unlist {
@@ -155,12 +173,23 @@ export const SiteHeader = styled.header`
   position: fixed;
   top: 0;
   width: ${WIDTH_100};
-  padding: 2rem 0;
+  padding: 4rem 0;
   z-index: 9999;
+  transition: all 300ms ease;
 
   .header {
     align-items: center;
   }
+
+  &.scrolled {
+    padding: 1.5rem 0;
+  }
+
+  @media only screen and (max-width: ${XS}) {
+    padding: 1.5rem 0;
+  }
+
+
 `;
 
 // HEADER LET'S TALK BUTTON
@@ -169,13 +198,13 @@ export const LetsTalkButton = styled.a`
   border-radius: 0.4rem;
   color: ${WHITE};
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: ${BOLD};
-  height: 5rem;
+  height: 4rem;
   letter-spacing: 0.1rem;
-  line-height: 5rem;
+  line-height: 4rem;
   margin-left: auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
   text-decoration: none;
 `;
 
@@ -184,11 +213,14 @@ export const Banner = styled.div`
   height: ${BANNER_HEIGHT};
   margin: 0 auto;
   position: relative;
+  ${GRADIENT('120deg', '#3744ea', '#3392e4', 0, 100)};
   
   .banner-media {
     height: ${HEIGHT_100};
     justify-content: center;
-    flex-direction: column
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
   }
 `;
 
@@ -198,7 +230,7 @@ export const BannerMedia = styled.video`
   height: ${HEIGHT_100};
   position: absolute;
   object-fit: cover;
-  z-index: -1;
+  z-index: 9;
 `;
 
 // BANNER DESCRIPTION
