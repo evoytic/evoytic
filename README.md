@@ -85,10 +85,15 @@ npm run build && npm run serve
 
 <hr/>
 
-### :+1: Good to go
+### :+1: good to go
+
+<a href="https://www.buymeacoffee.com/saroz" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 <hr/>
 
 ## Support ?
 
 Write us an email for any help - contact[at]evoytic.com
+
+
+###### :zap: Video by <a href="https://pixabay.com/users/artdio2020-8194567/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=46962">Art Dio</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=46962">Pixabay</a>
