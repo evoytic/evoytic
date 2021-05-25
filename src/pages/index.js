@@ -12,7 +12,7 @@ import ServicesSection from "../components/services";
 const IndexPage = () => (
   <Layout gradient={false}>
     <Seo
-      title="Startup, Solutions for every individual, team &amp; organization."
+      title="Startup, Solutions for Every Individual, Team &amp; Organization."
       keyword="web development, web app, mobile app, web design, e-commerce, digital marketing"
     />
     <SiteBanner/>
