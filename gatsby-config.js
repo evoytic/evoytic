@@ -4,7 +4,6 @@ module.exports = {
     description: `Official Website`,
     author: `@evoytic`,
     footerData: {
-      title: `Say hello`,
       email: `contact@evoytic.com`,
       address: `2093 Philadelphia Pike #1944 Claymont, DE 19703`,      
     },

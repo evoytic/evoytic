@@ -20,7 +20,6 @@ const Layout = ({ gradient, children }) => {
         siteMetadata {
           title,
           footerData {
-            title,
             email,
             address,
           }
