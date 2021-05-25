@@ -1,44 +1,94 @@
+![evoytic com_ (1)](https://user-images.githubusercontent.com/7526910/119469396-077f5a80-bd67-11eb-83c8-c1c9941d5d5b.png)
 
-# Evoytic, Inc.
 
-Build using [gatsby](https://www.gatsbyjs.com/)
+## Prerequisite
+- [x] [Node](https://nodejs.org/en/)
+- [x] [Gatsby](https://www.gatsbyjs.com/)
 
-### Run Locally
+## Extra Packages / Except Gatsby Stater
+- [x] [Styled Components](https://styled-components.com/)
+- [x] [Gh-pages](https://github.com/tschaub/gh-pages)
+- [x] [Google gtag](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/)
+- [x] [Webfonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-webfonts/)
+ 
 
-**Required** - [node](https://nodejs.org/en/)
+## Run locally
 
-- Clone
+- Clone project in your local machine
+```
+git clone https://github.com/evoytic/evoytic.git evoytic
+```
+
 - Install packages ```npm i```
-- Develop ```npm run develop``` or ```gatsby develop```
-    * install [Gatsby CLI](https://www.gatsbyjs.com/docs/how-to/local-development/), if you want to develop using ```gatsby```
+
+- Run and browse project
+```
+npm run build && npm run serve
+```
+- Open link in browser http://localhost:9000
+
+## Modify site
+- Update package file
+   * Update name, description, version and author
+   * Update repo / bug URL & add to your repo
+
+   <br/>
+
+   ``` 
+   rm -rf .git
+   ```
+   #### Create a new repository on the command line
+   ```33
+   git init
+   git add --all
+   git commit -m "initialization repo"
+   git remote add origin https://github.com/evoytic/evoytic.git
+   git push -u origin main
+   ``` 
+   
+   #### Push an existing repository from the command line
+   ``` 
+   git remote add origin https://github.com/evoytic/evoytic.git
+   git push -u origin main
+   ```
+   
+
+   |Pages|Components|
+   |-|-|
+   |Home ```index.js```|Header ```header.js```|
+   ||Footer ```footer.js```|
+   ||Banner ```banner.js```|
+   ||About ```about.js```|
+   ||Services ```services.js```|
+   ||Product ```product.js```|
+   
+- Run ```npm run develop``` or ```gatsby develop```
+
 - Browse ```http://localhost:8000```
 
-### Deploy on ```gh-pages```
-- Create new empty branch ```gh-pages``` (important)
-```
-    # create branch
+## Deploy on ```gh-pages```
+- Create new empty branch ```gh-pages``` ***important***
+ 
+   #### create branch, remove files, commit & push
+   ```
     git checkout --orphan gh-pages
-
-    # remove files
     git rm -rf .
-
-    # commit
     git commit --allow-empty -m "root commit"
-
-    # push
     git push origin gh-pages
+   ```
+- Update script on ```package.json```
 
-```
-- Make update on ```package.json```
-    * Remove ```echo 'your-domain-name' > ./public/CNAME &&```, If not using **custom domain**
-
-    * Change ```DOMAIN-NAME```, If using custom domain
-
-    ```
-    "deploy": "gatsby build --prefix-paths && echo 'DOMAIN-NAME' > ./public/CNAME && gh-pages -d public -b gh-pages",
-    ```
+   * Remove code ~~```echo 'DOMAIN-NAME' > ./public/CNAME &&```~~, If not using **custom domain**
+   * Change ```DOMAIN-NAME```, If using custom domain
 
 - Deploy ```npm run deploy```
 
-#
+<hr/>
+
+### :+1: Good to go
+
+<hr/>
+
+## Support ?
+
 Write us an email for any help - contact[at]evoytic.com
