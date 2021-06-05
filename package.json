@@ -2,7 +2,7 @@
   "name": "evoytic",
   "private": true,
   "description": "Official Website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Evoytic, Inc. <contact@evoytic.com>",
   "dependencies": {
     "gatsby": "^3.4.1",
